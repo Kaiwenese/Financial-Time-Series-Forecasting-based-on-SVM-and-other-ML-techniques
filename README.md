@@ -6,14 +6,36 @@ This project aims to predict the stock price of financial time series using two 
 
 ## Getting Strated
 
-To run the code in this project, you need to have Jupyter Notebook installed on your machine. You also need to have the following Python libraries installed:
+To run the code in this project, Jupyter Notebook has to be installed on local machine. the following Python libraries also have to be installed:
 
 * Pandas
-Markup : * NumPy
-Markup : * Matplotlib
-Markup : * Seaborn
-Markup : * SciPy
-Markup : * Scikit-learn
-Markup : * Statsmodels
-Markup : * Keras
-Markup : * TensorFlow
+* NumPy
+* Matplotlib
+* Seaborn
+* SciPy
+* Scikit-learn
+* Statsmodels
+* Keras
+* TensorFlow
+
+Install the libraries using the command:
+
+    pip install pandas numpy matplotlib seaborn scipy scikit-learn statmodels keras tensorflow
+    
+There is and additional file called utilities.py which consists a set of functions that need to be imported into the notebook.
+
+After installing the required libraries, clone this repository and open the Jupyter Notebook file *'Project (without outlier).ipynb'* and *'Project (with outlier).ipynb'* to see the implementation details.
+
+## Dataset
+
+## Basic Statistics of Data
+
+## Data Cleaning
+
+## SVM-based forecasting
+
+## LSTM-based forecasting
+
+## Results
+
+## Conclusion
