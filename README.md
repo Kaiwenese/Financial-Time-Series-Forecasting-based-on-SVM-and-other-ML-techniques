@@ -8,7 +8,7 @@ This project aims to predict the stock price of financial time series using two 
 
 To run the code in this project, you need to have Jupyter Notebook installed on your machine. You also need to have the following Python libraries installed:
 
-Markup : * Pandas
+* Pandas
 Markup : * NumPy
 Markup : * Matplotlib
 Markup : * Seaborn
