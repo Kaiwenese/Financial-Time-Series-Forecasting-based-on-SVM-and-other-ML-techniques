@@ -22,7 +22,7 @@ Install the libraries using the command:
 
     pip install pandas numpy matplotlib seaborn scipy scikit-learn statmodels keras tensorflow
     
-There is and additional file called utilities.py which consists a set of functions that need to be imported into the notebook.
+There is and additional file called *'utilities.py'* which consists a set of functions that need to be imported into the notebook.
 
 After installing the required libraries, clone this repository and open the Jupyter Notebook file *'Project (without outlier).ipynb'* and *'Project (with outlier).ipynb'* to see the implementation details.
 
