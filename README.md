@@ -26,6 +26,19 @@ There is and additional file called *'utilities.py'* which consists a set of fun
 
 After installing the required libraries, clone this repository and open the Jupyter Notebook file *'Project (without outlier).ipynb'* and *'Project (with outlier).ipynb'* to see the implementation details.
 
+## utilities.py
+
+This file contains different functions that are being utilise in *'Project (without outlier).ipynb'* and *'Project (with outlier).ipynb'*. Some libraries is also being imported in this file such as Matplotlib, Seaborn, NumPy, scikit-learn, keras, math and TensorFlow. The description of each function is shown as below:
+
+* price_plot(data): function to plot the price data by parsing the parameter "data". The figure size is set to be 20x10. The data taken into the plotting includes the first 4 columns which are Open, High, Low and Close in the data. The name of y axis is set to "Price" and the legend is displayed in the font size of 15.
+* boxplot(data, col): function to visualize the boxplot. The figure size is set to be 10x10. The visualization contains the 7 subplots which are the boxplots that are all the columns from the dataset and is arranged vertically. The parameters that need to parse in the function is "data" and "col".
+* SVM_fit_model(X_train, y_train, X_test, y_test): function that create a SVR model, fit the training data into the model and train it. The training data and testing data are used to make predictions, the Root Mean Square Error is calculated. The parameters for this function include "X_train", "y_train", "X_test" and "y_test". The result is also formulated and returned as values.
+* LSTM_fit_model(X_train, y_train, X_test, y_test): function that is similar to the SVM_fit_model function where it is designed to create a LSTM model, fit the training data into the model and train it. The training data and testing data are used to make predictions, the Root Mean Square Error (RMSE) is calculated. The parameters for this function include "X_train", "y_train", "X_test" and "y_test". The result is being calculated and returned.
+* root_mean_square(y_train, y_test, pred_train, pred_test): function that calculate the Root Mean Square Error of the prediction and the actual data. It consists the parameter of "y_train", "y_test", "pred_train" and "pred_test".
+* visualize(y_train, y_test, pred_train, pred_test, date_train, date_test): function that visualize the actual Open price data with the predicted Open price data using seaborn library. "y_train", "y_test", "pred_train", "pred_test", "date_train" and "date_test" are the parameters for the function.
+* best_training_performance(rmse_svm_train_1, rmse_svm_train_2, rmse_lstm_train_1,  rmse_lstm_train_2): function that compares the best training RMSE out of the 2 prediction models with 2 different methods.
+* best_testing_performance(rmse_svm_test_1, rmse_svm_test_2, rmse_lstm_test_1,  rmse_lstm_test_2): function that compares the best testing RMSE out of the 2 prediction models with 2 different methods, similar to best_training_performance.
+
 ## Dataset
 
 The dataset used in this project is the historical stock price of Facebook obtained from Kaggle. The dataset contains the daily stock prices from 18th May 2012 to 1st October 2021. The dataset is pre-processed to remove missing values, remove duplicated data and normalize the features. The *'Project (without outlier).ipynb'* file consists additional pre-processing step where the outliers are removed. On the other hand, the outliers in *'Project (with outlier).ipynb'* is remained.
@@ -39,11 +52,11 @@ There are two different approaches when dealing with the data before fit into th
 
 ## SVM-based forecasting
 
-The SVM-based forecasting model uses the Support Vector Regression (SVR) algorithm from scikit-learn (sklearn) module. The SVR algorithm is trained on the historical stock prices of Facebook from the beginning of the dataset until end of 2018 and the model is used to predict the testing dataset which contains the date from start of 2019 to the end of the dataset. This model applies the two different approaches to perform the forecasting
+The SVM-based forecasting model uses the Support Vector Regression (SVR) algorithm from scikit-learn (sklearn) module. The SVR algorithm is trained on the historical stock prices of Facebook from the beginning of the dataset until end of 2018 and the model is used to predict the testing dataset which contains the date from start of 2019 to the end of the dataset. This model applies the two different approaches to perform the forecasting.
 
 ## LSTM-based forecasting
 
-The LSTM-based forecasting model uses a sequential neural network with a combination of LSTM layers and Dense Layers from Keras. The neural network is trained on the historical stock prices of Facebook from the beginning of the dataset until end of 2018 and the model is used to predict the testing dataset which contains the date from start of 2019 to the end of the dataset. This model also applies the two different approaches to perform the forecasting
+The LSTM-based forecasting model uses a sequential neural network with a combination of LSTM layers and Dense Layers from Keras. The neural network is trained on the historical stock prices of Facebook from the beginning of the dataset until end of 2018 and the model is used to predict the testing dataset which contains the date from start of 2019 to the end of the dataset. This model also applies the two different approaches to perform the forecasting.
 
 ## Results
 
