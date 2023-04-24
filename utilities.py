@@ -1,3 +1,4 @@
+# Importing neccesary libraries/modules
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
@@ -108,6 +109,7 @@ def visualize(y_train, y_test, pred_train, pred_test, date_train, date_test):
 
 # Function to compare the best training result
 def best_training_performance(rmse_svm_train_1, rmse_svm_train_2, rmse_lstm_train_1,  rmse_lstm_train_2):
+    # Find the minimum value of Root Mean Square Error for the prediction on training data
     best = min([rmse_svm_train_1, rmse_svm_train_2, rmse_lstm_train_1, rmse_lstm_train_2])
     if (best == rmse_svm_train_1):
         name, method = "SVM", 1
@@ -122,6 +124,7 @@ def best_training_performance(rmse_svm_train_1, rmse_svm_train_2, rmse_lstm_trai
 
 # Function to compare the best testing result
 def best_testing_performance(rmse_svm_test_1, rmse_svm_test_2, rmse_lstm_test_1,  rmse_lstm_test_2):
+    # Find the minimum value of Root Mean Square Error for the prediction on testing data
     best = min([rmse_svm_test_1, rmse_svm_test_2, rmse_lstm_test_1,  rmse_lstm_test_2])
     if (best == rmse_svm_test_1):
         name, method = "SVM", 1
