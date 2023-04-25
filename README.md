@@ -47,8 +47,8 @@ The dataset used in this project is the historical stock price of Facebook obtai
 
 There are two different approaches when dealing with the data before fit into the training models: 
 
-* First Approach: first normalize the data, then split the data into training and testing data, and fit the training data to the models.
-* Second approach: this approach is more related to the real-world application, where the data is first split into training and testing data, then normalize the data, and fit the training data to the models.
+* First Approach (Method 1): first normalize the data, then split the data into training and testing data, and fit the training data to the models.
+* Second approach (Method 2): this approach is more related to the real-world application, where the data is first split into training and testing data, then normalize the data, and fit the training data to the models.
 
 ## SVM-based forecasting
 
