@@ -60,7 +60,7 @@ The LSTM-based forecasting model uses a sequential neural network with a combina
 
 ## Results
 
-The performance of the SVM-based and LSTM-based forecasting models is evaluated using Root Mean Squared Error (RMSE) metrics. The results show that the LSTM-based model outperforms the SVM-based model in terms of forecasting accuracy.
+The performance of the SVM-based and LSTM-based forecasting models is evaluated using Root Mean Squared Error (RMSE) metric since the orginal data and prediction result are in regression form. The results show that the LSTM-based model outperforms the SVM-based model in terms of forecasting accuracy.
 
 ## Conclusion
 
